@@ -1,20 +1,3 @@
-/*!
-
-=========================================================
-* Argon Design System React - v1.1.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/argon-design-system-react
-* Copyright 2020 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/argon-design-system-react/blob/master/LICENSE.md)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import React from "react";
 import { Link } from "react-router-dom";
 // JavaScript plugin that hides or shows a component based on your scroll
@@ -39,7 +22,7 @@ import {
   UncontrolledTooltip,
 } from "reactstrap";
 
-import Logo from "assets/img/brand/metanoia_newlogo.png";
+import Logo from "assets/img/brand/header_logo.png";
 
 class DemoNavbar extends React.Component {
   componentDidMount() {
@@ -102,7 +85,9 @@ class DemoNavbar extends React.Component {
       <>
         <header className="header-global">
           <Navbar
-            className="navbar-main navbar-transparent navbar-light headroom"
+            style={{backgroundColor:'#AC3791 !important' , width: '100%'}}
+            className="navbar-main navbar-transparent navbar-light"
+            // className="navbar-main navbar-transparent navbar-light "
             expand="lg"
             id="navbar-main"
           >
@@ -124,7 +109,11 @@ class DemoNavbar extends React.Component {
                   <Row>
                     <Col className="collapse-brand" xs="6">
                       <Link to="/">
-                        <img alt="..." src={Logo} />
+                        <img
+                          alt="..."
+                          src={Logo}
+                          id="navBarLogo"
+                        />
                       </Link>
                     </Col>
                     <Col className="collapse-close" xs="6">
