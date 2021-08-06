@@ -2,3 +2,16 @@
     color: #AC3791;
     font-family: Acme;
 }
+
+.cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .bannerStyles2 {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }

@@ -1,5 +1,4 @@
 import React from "react";
-import "./About.css";
 
 // reactstrap components
 import { Button, Container, Row, Col } from "reactstrap";
