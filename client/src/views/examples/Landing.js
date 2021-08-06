@@ -39,7 +39,7 @@ import Testimonial2 from "assets/img/theme/testimonial2.svg";
 import Testimonial3 from "assets/img/theme/testimonial3.svg";
 
 // css
-import './landing.css';
+import "./landing.css";
 
 const items = [
   {
@@ -106,7 +106,9 @@ class Landing extends React.Component {
                           id="getStartedBtn"
                           href="register"
                         >
-                          <span id="getStartedText" className="btn-inner--text">Get Started</span>
+                          <span id="getStartedText" className="btn-inner--text">
+                            Get Started
+                          </span>
                         </Button>
                       </div>
                     </Col>
@@ -132,14 +134,23 @@ class Landing extends React.Component {
             </section>
             {/* 1st Hero Variation */}
           </div>
-          <section style={{backgroundColor: '#FCFAD9'}} className="section section-lg pt-lg-0 mt--200">
-          <br></br>
-          <br></br>
-          <Container>
-          {/* <Row className="justify-content-center text-center mb-lg"> */}
+          <section
+            style={{ backgroundColor: "#FCFAD9" }}
+            className="section section-lg pt-lg-0 mt--200"
+          >
+            <br></br>
+            <br></br>
+            <Container>
+              {/* <Row className="justify-content-center text-center mb-lg"> */}
 
-                  <h2 id="sectionHeading" style={{textAlign: 'center'}} className="display-3">Recommended Topics</h2>
-                  <br></br>
+              <h2
+                id="sectionHeading"
+                style={{ textAlign: "center" }}
+                className="display-3"
+              >
+                Recommended Topics
+              </h2>
+              <br></br>
               {/* </Row> */}
             </Container>
             <Container>
@@ -147,7 +158,10 @@ class Landing extends React.Component {
                 <Col lg="12">
                   <Row className="row-grid">
                     <Col lg="4">
-                      <Card className="card-lift--hover shadow border-0">
+                      <Card
+                        className="card-lift--hover shadow border-0"
+                        style={{ borderRadius: 40 }}
+                      >
                         <CardBody className="py-5">
                           <div className="icon icon-shape icon-shape-primary rounded-circle mb-4">
                             <i className="ni ni-check-bold" />
@@ -218,7 +232,10 @@ class Landing extends React.Component {
                       </Card>
                     </Col>
                     <Col lg="4">
-                      <Card className="card-lift--hover shadow border-0">
+                      <Card
+                        className="card-lift--hover shadow border-0"
+                        style={{ borderRadius: 40 }}
+                      >
                         <CardBody className="py-5">
                           <div className="icon icon-shape icon-shape-success rounded-circle mb-4">
                             <i className="ni ni-istanbul" />
@@ -291,7 +308,10 @@ class Landing extends React.Component {
                       </Card>
                     </Col>
                     <Col lg="4">
-                      <Card className="card-lift--hover shadow border-0">
+                      <Card
+                        className="card-lift--hover shadow border-0"
+                        style={{ borderRadius: 40 }}
+                      >
                         <CardBody className="py-5">
                           <div className="icon icon-shape icon-shape-warning rounded-circle mb-4">
                             <i className="ni ni-planet" />
@@ -368,7 +388,10 @@ class Landing extends React.Component {
               </Row>
             </Container>
           </section>
-          <section style={{ backgroundColor: '#FCFAD9'}} className="section section-lg">
+          <section
+            style={{ backgroundColor: "#FCFAD9" }}
+            className="section section-lg"
+          >
             <Container>
               <Row className="row-grid align-items-center">
                 <Col className="order-md-2" md="6">
@@ -383,7 +406,9 @@ class Landing extends React.Component {
                     <div className="icon icon-lg icon-shape icon-shape-success shadow rounded-circle mb-5">
                       <i className="ni ni-settings-gear-65" />
                     </div>
-                    <h3 id="signUpTitle">Sign up for our personalized newsletter!</h3>
+                    <h3 id="signUpTitle">
+                      Sign up for our personalized newsletter!
+                    </h3>
                     <p>
                       A curated book recommendations list every month based on
                       your preferences, just for you!
@@ -402,11 +427,16 @@ class Landing extends React.Component {
               </Row>
             </Container>
           </section>
-          <section style={{ backgroundColor: '#FCFAD9'}} className="section section-lg">
+          <section
+            style={{ backgroundColor: "#FCFAD9" }}
+            className="section section-lg"
+          >
             <Container>
               <Row className="justify-content-center text-center mb-lg">
                 <Col lg="8">
-                  <h2 id="sectionHeading" className="display-3">What we believe in?</h2>
+                  <h2 id="sectionHeading" className="display-3">
+                    What we believe in?
+                  </h2>
                 </Col>
               </Row>
               <Row>
@@ -420,7 +450,9 @@ class Landing extends React.Component {
                     />
                     <div className="pt-4 text-center">
                       <h5 className="title">
-                        <span id="beliefs" className="d-block mb-1">Accessibility</span>
+                        <span id="beliefs" className="d-block mb-1">
+                          Accessibility
+                        </span>
                       </h5>
                     </div>
                   </div>
@@ -435,7 +467,9 @@ class Landing extends React.Component {
                     />
                     <div className="pt-4 text-center">
                       <h5 className="title">
-                        <span id="beliefs" className="d-block mb-1">Social Impact</span>
+                        <span id="beliefs" className="d-block mb-1">
+                          Social Impact
+                        </span>
                       </h5>
                     </div>
                   </div>
@@ -451,7 +485,9 @@ class Landing extends React.Component {
                     />
                     <div className="pt-4 text-center">
                       <h5 className="title">
-                        <span id="beliefs" className="d-block mb-1">Bias Prevention</span>
+                        <span id="beliefs" className="d-block mb-1">
+                          Bias Prevention
+                        </span>
                       </h5>
                     </div>
                   </div>
@@ -459,12 +495,17 @@ class Landing extends React.Component {
               </Row>
             </Container>
           </section>
-          <section style={{backgroundColor: '#FCFAD9'}} className="section section-lg ">
-          {/* section section-lg bg-gradient-default */}
+          <section
+            style={{ backgroundColor: "#FCFAD9" }}
+            className="section section-lg "
+          >
+            {/* section section-lg bg-gradient-default */}
             <Container className="pb-300">
               <Row className="text-center justify-content-center">
                 <Col lg="10">
-                  <h2 id="sectionHeading" className="display-3 text">Testimonials</h2>
+                  <h2 id="sectionHeading" className="display-3 text">
+                    Testimonials
+                  </h2>
                   <p id="beliefs" className="lead text">
                     Read below for what our customers had to say.
                   </p>
@@ -497,7 +538,9 @@ class Landing extends React.Component {
                 <Col lg="8">
                   <Card className="bg-gradient-secondary shadow">
                     <CardBody className="p-lg-5">
-                      <h4 id="sectionHeading" className="mb-1">Want to learn more?</h4>
+                      <h4 id="sectionHeading" className="mb-1">
+                        Want to learn more?
+                      </h4>
                       <p className="mt-0">
                         We care about your input and experiences.
                       </p>

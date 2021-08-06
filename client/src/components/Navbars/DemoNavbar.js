@@ -102,7 +102,7 @@ class DemoNavbar extends React.Component {
       <>
         <header className="header-global">
           <Navbar
-            style={{backgroundColor:'#AC3791 !important' , width: '100%'}}
+            style={{ backgroundColor: "#AC3791 !important", width: "100%" }}
             className="navbar-main navbar-transparent navbar-light"
             // className="navbar-main navbar-transparent navbar-light "
             expand="lg"
@@ -126,11 +126,7 @@ class DemoNavbar extends React.Component {
                   <Row>
                     <Col className="collapse-brand" xs="6">
                       <Link to="/">
-                        <img
-                          alt="..."
-                          src={Logo}
-                          id="navBarLogo"
-                        />
+                        <img alt="..." src={Logo} id="navBarLogo" />
                       </Link>
                     </Col>
                     <Col className="collapse-close" xs="6">
