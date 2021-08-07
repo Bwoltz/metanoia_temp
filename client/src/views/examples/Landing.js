@@ -158,13 +158,10 @@ class Landing extends React.Component {
                 <Col lg="12">
                   <Row className="row-grid">
                     <Col lg="4">
-                      <Card
-                        className="card-lift--hover shadow border-0"
-                        style={{ borderRadius: 40 }}
-                      >
+                      <Card className="card-lift--hover shadow border-0 roundEdges">
                         <CardBody className="py-5">
                           <div className="icon icon-shape icon-shape-primary rounded-circle mb-4">
-                            <i className="ni ni-check-bold" />
+                            <i className="ni ni-single-02" />
                           </div>
                           <h6 className="text-primary text-uppercase">
                             Identity
@@ -232,13 +229,10 @@ class Landing extends React.Component {
                       </Card>
                     </Col>
                     <Col lg="4">
-                      <Card
-                        className="card-lift--hover shadow border-0"
-                        style={{ borderRadius: 40 }}
-                      >
+                      <Card className="card-lift--hover shadow border-0 roundEdges">
                         <CardBody className="py-5">
                           <div className="icon icon-shape icon-shape-success rounded-circle mb-4">
-                            <i className="ni ni-istanbul" />
+                            <i className="ni ni-world" />
                           </div>
                           <h6 className="text-success text-uppercase">
                             Diversity
@@ -308,13 +302,10 @@ class Landing extends React.Component {
                       </Card>
                     </Col>
                     <Col lg="4">
-                      <Card
-                        className="card-lift--hover shadow border-0"
-                        style={{ borderRadius: 40 }}
-                      >
+                      <Card className="card-lift--hover shadow border-0 roundEdges">
                         <CardBody className="py-5">
                           <div className="icon icon-shape icon-shape-warning rounded-circle mb-4">
-                            <i className="ni ni-planet" />
+                            <i className="ni ni-tie-bow" />
                           </div>
                           <h6 className="text-warning text-uppercase">
                             Gender
