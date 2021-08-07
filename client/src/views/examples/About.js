@@ -17,7 +17,7 @@ import CassidyImage from "assets/img/theme/cassidy.png";
 import BrettImage from "assets/img/theme/brett.png";
 
 // css
-import './about.css';
+import "./about.css";
 
 class About extends React.Component {
   state = {};
@@ -35,7 +35,12 @@ class About extends React.Component {
             {/* shape Hero */}
             <section className="section section-lg section-shaped pb-200">
               <div className="shape shape-style-1 shape-default cont">
-                <img alt="..." src={Banner} className="bannerStyles2" />
+                <img
+                  alt="..."
+                  src={Banner}
+                  className="bannerStyles2"
+                  style={{ opacity: 0.3 }}
+                />
               </div>
               <Container className="py-lg-md d-flex">
                 <div className="col px-0">
@@ -44,7 +49,10 @@ class About extends React.Component {
                       <h1 id="heading" className="display-3 text-white">
                         About Us{" "}
                       </h1>
-                      <p className="lead text-white" style={{ margin: 15 }}>
+                      <p
+                        className="lead text-white"
+                        style={{ margin: 15 }} //fontWeight: "bold" }}
+                      >
                         Metanoia is an upcoming EdTech startup that seeks to put
                         social issues at the forefront of children’s lives
                         through our virtual interactive library. Our website
@@ -76,30 +84,35 @@ class About extends React.Component {
               </div> */}
             </section>
             {/* Founder Intros */}
-            <section style={{backgroundColor: '#FCFAD9'}} className="section section-lg">
-            <Container>
-              <Row className="justify-content-center text-center mb-lg">
-                <Col lg="8">
-                  <h2 id="heading" className="display-3">Our Team</h2>
-                </Col>
-              </Row>
-              <Row className="justify-content-center text-center mb-lg">
-                <Col className="mb-4 mb-lg-0" md="4">
-                  <div className="px-4">
-                    <img
-                      alt="..."
-                      className="rounded-circle img-center img-fluid shadow shadow-lg--hover"
-                      src={AsthaImage}
-                      style={{ width: "300px" }}
-                    />
-                    <div className="pt-4 text-center">
-                      <h5 className="title">
-                        <span className="d-block mb-1">Astha Rai</span>
-                      </h5>
-                      <h6 className="title">
-                        <span className="d-block mb-10">Co-Founder</span>
-                      </h6>
-                    </div>
+            <section
+              style={{ backgroundColor: "#FCFAD9" }}
+              className="section section-lg"
+            >
+              <Container>
+                <Row className="justify-content-center text-center mb-lg">
+                  <Col lg="8">
+                    <h2 id="heading" className="display-3">
+                      Our Team
+                    </h2>
+                  </Col>
+                </Row>
+                <Row className="justify-content-center text-center mb-lg">
+                  <Col className="mb-4 mb-lg-0" md="4">
+                    <div className="px-4">
+                      <img
+                        alt="..."
+                        className="rounded-circle img-center img-fluid shadow shadow-lg--hover"
+                        src={AsthaImage}
+                        style={{ width: "300px" }}
+                      />
+                      <div className="pt-4 text-center">
+                        <h5 className="title">
+                          <span className="d-block mb-1">Astha Rai</span>
+                        </h5>
+                        <h6 className="title">
+                          <span className="d-block mb-10">Co-Founder</span>
+                        </h6>
+                      </div>
                     </div>
                   </Col>
                   <Col className="mb-4 mb-lg-0" md="4">
