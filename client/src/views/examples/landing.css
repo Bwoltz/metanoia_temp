@@ -103,6 +103,8 @@
 .button:hover,
 .button:focus {
   transform: translateY(-6px);
+  background-color: #ac3791;
+  color: white;
 }
 
 .button:hover::before,
