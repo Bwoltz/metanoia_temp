@@ -101,14 +101,8 @@ class Landing extends React.Component {
                         The digital library that inspires conversations
                       </p>
                       <div className="btn-wrapper">
-                        <Button
-                          className="btn-icon mb-3 mb-sm-0"
-                          id="getStartedBtn"
-                          href="register"
-                        >
-                          <span id="getStartedText" className="btn-inner--text">
-                            Get Started
-                          </span>
+                        <Button className="button" href="register">
+                          Get Started
                         </Button>
                       </div>
                     </Col>
@@ -178,7 +172,7 @@ class Landing extends React.Component {
                             </Badge>
                           </div>
                           <Button
-                            className="mt-4"
+                            className="mt-4 "
                             color="primary"
                             href=""
                             onClick={() => this.toggleModal("comingSoonModal")}
