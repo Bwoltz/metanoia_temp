@@ -1,6 +1,9 @@
 import React from "react";
 // nodejs library that concatenates classes
 import classnames from "classnames";
+import linkedin from "../../assets/img/icons/common/linkedin.png";
+import facebook from "../../assets/img/icons/common/facebook.png";
+import gmail from "../../assets/img/icons/common/gmail.png";
 
 // reactstrap components
 import {
@@ -27,7 +30,7 @@ import "./Contact.css";
 import Banner from "assets/img/theme/banner.png";
 
 // css
-import './Contact.css'; 
+import "./Contact.css";
 
 class Contact extends React.Component {
   constructor(props, context) {
@@ -128,13 +131,18 @@ class Contact extends React.Component {
             </section>
             {/* 1st Hero Variation */}
           </div>
-          <section style={{backgroundColor: '#FCFAD9'}} className="section section-lg pt-lg-0 section-contact-us">
+          <section
+            style={{ backgroundColor: "#FCFAD9" }}
+            className="section section-lg pt-lg-0 section-contact-us"
+          >
             <Container>
               <Row className="justify-content-left">
                 <Col className="order-md-1  mt--200" md="8">
                   <Card className="bg-gradient-secondary shadow">
                     <CardBody className="p-lg-5">
-                      <h4 id="heading" className="mb-1">Want to learn more?</h4>
+                      <h4 id="heading" className="mb-1">
+                        Want to learn more?
+                      </h4>
                       <p className="mt-0">
                         We care about your input and experiences.
                       </p>
@@ -217,30 +225,42 @@ class Contact extends React.Component {
                 </Col>
                 <Col className="order-md-2" xs="1"></Col>
                 <Col className="order-md-3 px-10" md="3">
-                  <div id="heading">
+                  <div id="heading" style={{ width: 370 }}>
                     <br></br>
                     <br></br>
-                    <h4>
-                      Email:
-                      <span> </span>
-                      <a href="metanoiabooks.co@gmail.com" target="blank">
-                        metanoiabooks.co@gmail.com
+                    <h4 className="contactMethod">
+                      <a href="https://www.gmail.com" target="_blank">
+                        <div>
+                          <img src={gmail} className="imageStyles"></img>
+                          <span className="methodLabel">
+                            metanoiabooks.co@gmail.com
+                          </span>
+                        </div>
                       </a>
                     </h4>
-                    <h4>
+                    <h4 className="contactMethod">
                       <a
                         href="https://www.linkedin.com/company/metanoiabooks/"
-                        target="blank"
+                        target="_blank"
                       >
-                        Linkedin
+                        <div>
+                          <img src={linkedin} className="imageStyles"></img>
+                          <span className="methodLabel">@MetanoiaBooks</span>
+                        </div>
                       </a>
                     </h4>
-                    <h4>
+                    <h4 className="contactMethod">
                       <a
                         href="https://www.facebook.com/MetanoiaLibrary/"
-                        target="blank"
+                        target="_blank"
                       >
-                        Facebook
+                        <div>
+                          <img src={facebook} className="imageStyles"></img>
+                          <span className="methodLabel">
+                            {" "}
+                            @MetanoiaLibrary{" "}
+                          </span>
+                        </div>
                       </a>
                     </h4>
                     {/* <h4>
