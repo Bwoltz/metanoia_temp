@@ -388,7 +388,7 @@ class Landing extends React.Component {
                 </Col>
                 <Col className="order-md-1" md="6">
                   <div className="pr-md-5">
-                    <div className="icon icon-lg icon-shape icon-shape-success shadow rounded-circle mb-5">
+                    <div className="icon icon-lg icon-shape icon-shape-primary shadow rounded-circle mb-5">
                       <i className="ni ni-settings-gear-65" />
                     </div>
                     <h3 id="signUpTitle">
@@ -421,7 +421,7 @@ class Landing extends React.Component {
               <Row className="justify-content-center text-center mb-lg">
                 <Col lg="8">
                   <h2 id="sectionHeading" className="display-3">
-                    What we believe in?
+                    What We Believe In
                   </h2>
                 </Col>
               </Row>

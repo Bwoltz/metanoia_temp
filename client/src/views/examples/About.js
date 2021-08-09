@@ -11,7 +11,7 @@ import SimpleFooter from "components/Footers/CardsFooter.js";
 import Banner from "assets/img/theme/website-image.png";
 import AsthaImage from "assets/img/theme/astha.JPG";
 import JessImage from "assets/img/theme/jessica.png";
-import TanveeImage from "assets/img/theme/tanvee.JPG";
+import TanveeImage from "assets/img/theme/tanvee.jpg";
 import JoyceImage from "assets/img/theme/joyce.jpg";
 import CassidyImage from "assets/img/theme/cassidy.png";
 import BrettImage from "assets/img/theme/brett.png";
@@ -66,22 +66,6 @@ class About extends React.Component {
                   </Row>
                 </div>
               </Container>
-              {/* SVG separator */}
-              {/* <div className="separator separator-bottom separator-skew">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  preserveAspectRatio="none"
-                  version="1.1"
-                  viewBox="0 0 2560 100"
-                  x="0"
-                  y="0"
-                >
-                  <polygon
-                    className="fill-white"
-                    points="2560 0 2560 100 0 100"
-                  />
-                </svg>
-              </div> */}
             </section>
             {/* Founder Intros */}
             <section
