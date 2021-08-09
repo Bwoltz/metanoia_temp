@@ -98,7 +98,7 @@ class Landing extends React.Component {
                         Metanoia{" "}
                       </h1>
                       <p id="secondaryText" className="lead">
-                        The digital library that inspires conversations
+                        THE DIGITAL LIBRARY THAT INSPIRES CONVERSATIONS
                       </p>
                       <div className="btn-wrapper">
                         <Button className="button" href="register">
@@ -120,7 +120,8 @@ class Landing extends React.Component {
                   y="0"
                 >
                   <polygon
-                    className="fill-white"
+                    // className="fill-white"
+                    style={{fill:"#FCFAD9"}}
                     points="2560 0 2560 100 0 100"
                   />
                 </svg>
@@ -130,13 +131,12 @@ class Landing extends React.Component {
           </div>
           <section
             style={{ backgroundColor: "#FCFAD9" }}
-            className="section section-lg pt-lg-0 mt--200"
+            className="section section-lg pt-lg-0 mt--800"
           >
             <br></br>
-            <br></br>
+            
             <Container>
               {/* <Row className="justify-content-center text-center mb-lg"> */}
-
               <h2
                 id="sectionHeading"
                 style={{ textAlign: "center" }}
@@ -144,7 +144,7 @@ class Landing extends React.Component {
               >
                 Recommended Topics
               </h2>
-              <br></br>
+              {/* <br></br> */}
               {/* </Row> */}
             </Container>
             <Container>
@@ -400,6 +400,7 @@ class Landing extends React.Component {
                     </p>
                     <Button
                       className="btn-icon"
+                      // className="button"
                       href="subscribe"
                       id="subscribeBtn"
                     >

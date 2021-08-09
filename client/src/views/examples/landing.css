@@ -12,7 +12,7 @@
 #secondaryText {
   color: #e3f8fe;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 22px;
 }
 
 #navBarLogo {
@@ -35,8 +35,10 @@
 }
 
 #subscribeBtn {
-  background-color: #505f98;
+  background-color: #ac3791;
+  font-family: Acme;
   color: white;
+  border-radius: 40px;
 }
 
 #sectionHeading {
