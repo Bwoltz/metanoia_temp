@@ -101,7 +101,7 @@ class Landing extends React.Component {
                         THE DIGITAL LIBRARY THAT INSPIRES CONVERSATIONS
                       </p>
                       <div className="btn-wrapper">
-                        <Button className="button" href="register">
+                        <Button className="button" href="subscribe">
                           Get Started
                         </Button>
                       </div>
@@ -120,8 +120,8 @@ class Landing extends React.Component {
                   y="0"
                 >
                   <polygon
-                    // className="fill-white"
-                    style={{fill:"#FCFAD9"}}
+                    className="fill-white"
+                    // style={{fill:"#FCFAD9"}}
                     points="2560 0 2560 100 0 100"
                   />
                 </svg>
@@ -130,7 +130,7 @@ class Landing extends React.Component {
             {/* 1st Hero Variation */}
           </div>
           <section
-            style={{ backgroundColor: "#FCFAD9" }}
+            // style={{ backgroundColor: "#FCFAD9" }}
             className="section section-lg pt-lg-0 mt--800"
           >
             <br></br>
@@ -374,7 +374,7 @@ class Landing extends React.Component {
             </Container>
           </section>
           <section
-            style={{ backgroundColor: "#FCFAD9" }}
+            style={{ backgroundColor: "#FFFEF5" }}
             className="section section-lg"
           >
             <Container>
@@ -388,7 +388,7 @@ class Landing extends React.Component {
                 </Col>
                 <Col className="order-md-1" md="6">
                   <div className="pr-md-5">
-                    <div className="icon icon-lg icon-shape icon-shape-primary shadow rounded-circle mb-5">
+                    <div className="icon icon-lg icon-shape icon-shape-danger shadow rounded-circle mb-5">
                       <i className="ni ni-settings-gear-65" />
                     </div>
                     <h3 id="signUpTitle">
@@ -414,7 +414,7 @@ class Landing extends React.Component {
             </Container>
           </section>
           <section
-            style={{ backgroundColor: "#FCFAD9" }}
+            // style={{ backgroundColor: "#FCFAD9" }}
             className="section section-lg"
           >
             <Container>
@@ -482,7 +482,7 @@ class Landing extends React.Component {
             </Container>
           </section>
           <section
-            style={{ backgroundColor: "#FCFAD9" }}
+            style={{ backgroundColor: "#FFFEF5" }}
             className="section section-lg "
           >
             {/* section section-lg bg-gradient-default */}

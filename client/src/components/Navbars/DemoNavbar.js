@@ -6,11 +6,6 @@ import Headroom from "headroom.js";
 import {
   Button,
   UncontrolledCollapse,
-  DropdownMenu,
-  DropdownItem,
-  DropdownToggle,
-  UncontrolledDropdown,
-  Media,
   NavbarBrand,
   Navbar,
   NavItem,
@@ -23,6 +18,7 @@ import {
 } from "reactstrap";
 
 import Logo from "assets/img/brand/header_logo.png";
+import smallerLogo from "assets/img/brand/metanoia_newlogo.png"
 
 class DemoNavbar extends React.Component {
   componentDidMount() {
@@ -76,7 +72,7 @@ class DemoNavbar extends React.Component {
           color="default"
           href="subscribe"
         >
-          <span className="nav-link-inner--text ml-1">Subscribe</span>
+          <span className="nav-link-inner--text text-danger">Subscribe</span>
         </Button>
       );
     }
@@ -85,9 +81,7 @@ class DemoNavbar extends React.Component {
       <>
         <header className="header-global">
           <Navbar
-            style={{ backgroundColor: "#AC3791 !important", width: "100%" }}
             className="navbar-main navbar-transparent navbar-light"
-            // className="navbar-main navbar-transparent navbar-light "
             expand="lg"
             id="navbar-main"
           >
@@ -95,11 +89,11 @@ class DemoNavbar extends React.Component {
               <NavbarBrand className="mr-lg-5" to="/" tag={Link}>
                 <img style={{height: '60px'}} alt="..." src={Logo} />
               </NavbarBrand>
-              <button className="navbar-toggler" id="navbar_global">
+              <button className="navbar-toggler" id="navbar-">
                 <span className="navbar-toggler-icon" />
               </button>
               <UncontrolledCollapse
-                toggler="#navbar_global"
+                toggler="#navbar-danger"
                 navbar
                 className={this.state.collapseClasses}
                 onExiting={this.onExiting}
@@ -110,14 +104,16 @@ class DemoNavbar extends React.Component {
                     <Col className="collapse-brand" xs="6">
                       <Link to="/">
                         <img
+                          style={{height: '30pt',
+                          width: '30pt'}}
                           alt="..."
-                          src={Logo}
+                          src={smallerLogo}
                           id="navBarLogo"
                         />
                       </Link>
                     </Col>
                     <Col className="collapse-close" xs="6">
-                      <button className="navbar-toggler" id="navbar_global">
+                      <button className="navbar-toggler" id="navbar-danger">
                         <span />
                         <span />
                       </button>

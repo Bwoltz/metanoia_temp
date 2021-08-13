@@ -11,7 +11,7 @@ import SimpleFooter from "components/Footers/CardsFooter.js";
 import Banner from "assets/img/theme/website-image.png";
 import AsthaImage from "assets/img/theme/astha.JPG";
 import JessImage from "assets/img/theme/jessica.png";
-import TanveeImage from "assets/img/theme/tanvee.jpg";
+// import TanveeImage from "assets/img/theme/tanvee.jpg";
 import JoyceImage from "assets/img/theme/joyce.jpg";
 import CassidyImage from "assets/img/theme/cassidy.png";
 import BrettImage from "assets/img/theme/brett.png";
@@ -69,7 +69,7 @@ class About extends React.Component {
             </section>
             {/* Founder Intros */}
             <section
-              style={{ backgroundColor: "#FCFAD9" }}
+              // style={{ backgroundColor: "#FCFAD9" }}
               className="section section-lg"
             >
               <Container>
@@ -123,7 +123,7 @@ class About extends React.Component {
                       <img
                         alt="..."
                         className="rounded-circle img-center img-fluid shadow shadow-lg--hover"
-                        src={TanveeImage}
+                        src={AsthaImage}
                         style={{ width: "300px" }}
                       />
                       <div className="pt-4 text-center">
