@@ -71,6 +71,7 @@ class DemoNavbar extends React.Component {
           className="btn-neutral btn-icon"
           color="default"
           href="subscribe"
+          id="subscribe"
         >
           <span className="nav-link-inner--text text-danger">Subscribe</span>
         </Button>
