@@ -72,6 +72,7 @@ class Landing extends React.Component {
 
   state = {
     comingSoonModal: false,
+    entryModal: true,
   };
   toggleModal = (state) => {
     this.setState({
@@ -86,6 +87,42 @@ class Landing extends React.Component {
         <main ref="main">
           <div className="position-relative">
             {/* shape Hero */}
+            <Modal
+              className="modal-dialog-centered modal-primary"
+              contentClassName="bg-gradient-primary"
+              isOpen={this.state.entryModal}
+              toggle={() => this.toggleModal("entryModal")}
+            >
+              <div className="modal-header">
+                <button
+                  aria-label="Close"
+                  className="close"
+                  data-dismiss="modal"
+                  type="button"
+                  onClick={() => this.toggleModal("entryModal")}
+                >
+                  <span aria-hidden={true}>×</span>
+                </button>
+              </div>
+              <div className="modal-body">
+                <div className="py-3 text-center">
+                  <h2 className="heading">
+                    Subscribe now for the latest updates!
+                  </h2>
+                </div>
+              </div>
+              <div className="modal-footer">
+                <Button
+                  className="text-white ml-auto"
+                  color="link"
+                  data-dismiss="modal"
+                  type="button"
+                  onClick={() => this.props.history.push("/subscribe")}
+                >
+                  Subscribe
+                </Button>
+              </div>
+            </Modal>
             <section className="section section-lg section-shaped pb-300">
               <div className="shape shape-style-1 shape-default cont">
                 <img alt="..." src={Banner} className="bannerStyles" />
@@ -95,7 +132,7 @@ class Landing extends React.Component {
                   <Row>
                     <Col lg="6">
                       <h1 id="mainTitle" className="display-3 ">
-                        Metanoia{" "}
+                        Metanoia
                       </h1>
                       <p id="secondaryText" className="lead">
                         THE DIGITAL LIBRARY THAT INSPIRES CONVERSATIONS
@@ -134,7 +171,7 @@ class Landing extends React.Component {
             className="section section-lg pt-lg-0 mt--800"
           >
             <br></br>
-            
+
             <Container>
               {/* <Row className="justify-content-center text-center mb-lg"> */}
               <h2
