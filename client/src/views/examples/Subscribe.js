@@ -36,7 +36,8 @@ class Subscribe extends React.Component {
                     <Col lg="0">
                       <h1
                         className="display-3 text-white"
-                        style={{ margin: 15 }}
+                        style={{ margin: 15}}
+                        id="header"
                       >
                         Subscribe to Our Newsletter{" "}
                       </h1>

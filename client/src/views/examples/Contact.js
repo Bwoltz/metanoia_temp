@@ -132,7 +132,7 @@ class Contact extends React.Component {
             {/* 1st Hero Variation */}
           </div>
           <section
-            style={{ backgroundColor: "#FCFAD9" }}
+            // style={{ backgroundColor: "#FCFAD9" }}
             className="section section-lg pt-lg-0 section-contact-us"
           >
             <Container>
