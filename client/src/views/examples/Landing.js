@@ -88,39 +88,46 @@ class Landing extends React.Component {
           <div className="position-relative">
             {/* shape Hero */}
             <Modal
-              className="modal-dialog-centered modal-primary"
-              contentClassName="bg-gradient-primary"
+              className="modal-dialog-centered"
+              contentClassName=""
               isOpen={this.state.entryModal}
-              toggle={() => this.toggleModal("entryModal")}
+              /*toggle={() => this.toggleModal("entryModal")}*/
             >
               <div className="modal-header">
                 <button
-                  aria-label="Close"
-                  className="close"
-                  data-dismiss="modal"
                   type="button"
-                  onClick={() => this.toggleModal("entryModal")}
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
                 >
-                  <span aria-hidden={true}>×</span>
+                  <span aria-hidden="true">&times;</span>
                 </button>
               </div>
-              <div className="modal-body">
-                <div className="py-3 text-center">
-                  <h2 className="heading">
-                    Subscribe now for the latest updates!
-                  </h2>
-                </div>
+              <div className="modal-body" style={{ textAlign: "center" }}>
+                <h4 class="modal-title" style={{ color: "#ac3791" }}>
+                  SUBSCRIBE TO OUR NEWSLETTER!
+                </h4>
               </div>
-              <div className="modal-footer">
-                <Button
-                  className="text-white ml-auto"
-                  color="link"
-                  data-dismiss="modal"
-                  type="button"
-                  onClick={() => this.props.history.push("/subscribe")}
-                >
-                  Subscribe
-                </Button>
+
+              <div className="modal-body">
+                <div class="input-group mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Email address"
+                    aria-label="Recipient's username"
+                    aria-describedby="basic-addon2"
+                  />
+                  <div class="input-group-append">
+                    <button
+                      class="btn btn-outline-secondary"
+                      type="button"
+                      style={{ backgroundColor: "#ac3791", color: "white" }}
+                    >
+                      Subscribe
+                    </button>
+                  </div>
+                </div>
               </div>
             </Modal>
             <section className="section section-lg section-shaped pb-300">
