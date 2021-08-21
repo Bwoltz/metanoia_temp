@@ -91,6 +91,7 @@ class Landing extends React.Component {
               className="modal-dialog-centered"
               contentClassName=""
               isOpen={this.state.entryModal}
+
               /*toggle={() => this.toggleModal("entryModal")}*/
             >
               <div className="modal-header">
@@ -99,6 +100,7 @@ class Landing extends React.Component {
                   class="close"
                   data-dismiss="modal"
                   aria-label="Close"
+                  onClick={() => this.toggleModal("entryModal")}
                 >
                   <span aria-hidden="true">&times;</span>
                 </button>
