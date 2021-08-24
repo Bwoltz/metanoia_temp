@@ -72,6 +72,7 @@ class Landing extends React.Component {
 
   state = {
     comingSoonModal: false,
+    entryModal: true,
   };
   toggleModal = (state) => {
     this.setState({
@@ -86,6 +87,51 @@ class Landing extends React.Component {
         <main ref="main">
           <div className="position-relative">
             {/* shape Hero */}
+            <Modal
+              className="modal-dialog-centered"
+              contentClassName=""
+              isOpen={this.state.entryModal}
+
+              /*toggle={() => this.toggleModal("entryModal")}*/
+            >
+              <div className="modal-header">
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                  onClick={() => this.toggleModal("entryModal")}
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div className="modal-body" style={{ textAlign: "center" }}>
+                <h4 class="modal-title" style={{ color: "#ac3791" }}>
+                  SUBSCRIBE TO OUR NEWSLETTER!
+                </h4>
+              </div>
+
+              <div className="modal-body">
+                <div class="input-group mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Email address"
+                    aria-label="Recipient's username"
+                    aria-describedby="basic-addon2"
+                  />
+                  <div class="input-group-append">
+                    <button
+                      class="btn btn-outline-secondary"
+                      type="button"
+                      style={{ backgroundColor: "#ac3791", color: "white" }}
+                    >
+                      Subscribe
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </Modal>
             <section className="section section-lg section-shaped pb-300">
               <div className="shape shape-style-1 shape-default cont">
                 <img alt="..." src={Banner} className="bannerStyles" />
@@ -95,7 +141,7 @@ class Landing extends React.Component {
                   <Row>
                     <Col lg="6">
                       <h1 id="mainTitle" className="display-3 ">
-                        Metanoia{" "}
+                        Metanoia
                       </h1>
                       <p id="secondaryText" className="lead">
                         THE DIGITAL LIBRARY THAT INSPIRES CONVERSATIONS
@@ -134,7 +180,7 @@ class Landing extends React.Component {
             className="section section-lg pt-lg-0 mt--800"
           >
             <br></br>
-            
+
             <Container>
               {/* <Row className="justify-content-center text-center mb-lg"> */}
               <h2
