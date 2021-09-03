@@ -4,6 +4,7 @@ import classnames from "classnames";
 
 // reactstrap components
 import {
+  Alert,
   Badge,
   Button,
   Card,
@@ -37,6 +38,7 @@ import BiasPreventionIcon from "assets/img/icons/bias_prevention_icon.png";
 import Testimonial1 from "assets/img/theme/testimonial1.svg";
 import Testimonial2 from "assets/img/theme/testimonial2.svg";
 import Testimonial3 from "assets/img/theme/testimonial3.svg";
+import LibraryImage from "assets/img/theme/solutionbook.svg";
 
 // css
 import "./landing.css";
@@ -94,7 +96,7 @@ class Landing extends React.Component {
 
               /*toggle={() => this.toggleModal("entryModal")}*/
             >
-              <div className="modal-header">
+              {/* <div className="modal-header">
                 <button
                   type="button"
                   class="close"
@@ -104,8 +106,17 @@ class Landing extends React.Component {
                 >
                   <span aria-hidden="true">&times;</span>
                 </button>
-              </div>
+              </div> */}
               <div className="modal-body" style={{ textAlign: "center" }}>
+              <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                  onClick={() => this.toggleModal("entryModal")}
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
                 <h4 class="modal-title" style={{ color: "#ac3791" }}>
                   SUBSCRIBE TO OUR NEWSLETTER!
                 </h4>
@@ -144,7 +155,7 @@ class Landing extends React.Component {
                         Metanoia
                       </h1>
                       <p id="secondaryText" className="lead">
-                        THE DIGITAL LIBRARY THAT INSPIRES CONVERSATIONS
+                        THE DIGITAL LIBRARY THAT INSPIRES MEANINGFUL CONVERSATIONS
                       </p>
                       <div className="btn-wrapper">
                         <Button className="button" href="subscribe">
@@ -420,6 +431,105 @@ class Landing extends React.Component {
             </Container>
           </section>
           <section
+            // style={{ backgroundColor: "#FCFAD9" }}
+            className="section section-lg"
+          >
+            <Container>
+              <Row className="justify-content-center text-center mb-lg">
+                <Col lg="8">
+                  <h2 id="sectionHeading" className="display-3">
+                    The Problem
+                  </h2>
+                </Col>
+              </Row>
+              <Row>
+                <Col className="mb-4 mb-lg-0" md="4">
+                  <div className="px-4">
+                    <img
+                      alt="..."
+                      className="rounded-circle img-center img-fluid shadow shadow-lg--hover"
+                      src={BiasPreventionIcon}
+                      style={{ width: "300px" }}
+                    />
+                    <div className="pt-4 text-center">
+                      <h5 className="title">
+                        <span id="beliefs" className="d-block mb-1">
+                          Implicit Bias
+                        </span>
+                      </h5>
+                    </div>
+                  </div>
+                </Col>
+                <Col className="mb-4 mb-lg-0" md="4">
+                  <div className="px-4">
+                    <img
+                      alt="..."
+                      className="rounded-circle img-center img-fluid shadow shadow-lg--hover"
+                      src={AccessibilityIcon}
+                      style={{ width: "300px" }}
+                    />
+                    <div className="pt-4 text-center">
+                      <h5 className="title">
+                        <span id="beliefs" className="d-block mb-1">
+                          Accessibility
+                        </span>
+                      </h5>
+                    </div>
+                  </div>
+                </Col>
+                <Col className="mb-4 mb-lg-0" md="4">
+                  {/* maybe add lg="3" md="6"?? */}
+                  <div className="px-4">
+                    <img
+                      alt="..."
+                      className="rounded-circle img-center img-fluid shadow shadow-lg--hover"
+                      src={ImpactIcon}
+                      style={{ width: "300px" }}
+                    />
+                    <div className="pt-4 text-center">
+                      <h5 className="title">
+                        <span id="beliefs" className="d-block mb-1">
+                          Bias Prevention
+                        </span>
+                      </h5>
+                    </div>
+                  </div>
+                </Col>
+              </Row>
+            </Container>
+          </section>
+          
+          <section
+          className="section section-lg">
+            <Container>
+              <Row className="justify-content-center text-center mb-lg">
+                <Col lg="8">
+                  <h2 id="sectionHeading" className="display-3">
+                    Our Solution
+                  </h2>
+                </Col>
+              </Row>
+              <Row className="row-grid align-items-center">
+                <Col lg="6">
+                  <Alert id="library">Online Virtual Library</Alert>
+                  <h4>
+                  Personalized children’s book recommendations with a focus on books relating to social issues
+                  </h4>
+                </Col>
+                <Col lg="2">
+                </Col>
+                <Col className="order-md-1" md="3">
+                  <img
+                    alt="..."
+                    className="img-fluid floating"
+                    src={LibraryImage}
+                  />
+                </Col>
+              </Row>
+            </Container>
+          </section>
+
+          <section
             style={{ backgroundColor: "#FFFEF5" }}
             className="section section-lg"
           >
@@ -459,7 +569,7 @@ class Landing extends React.Component {
               </Row>
             </Container>
           </section>
-          <section
+          {/* <section
             // style={{ backgroundColor: "#FCFAD9" }}
             className="section section-lg"
           >
@@ -507,7 +617,6 @@ class Landing extends React.Component {
                   </div>
                 </Col>
                 <Col className="mb-4 mb-lg-0" md="4">
-                  {/* maybe add lg="3" md="6"?? */}
                   <div className="px-4">
                     <img
                       alt="..."
@@ -526,7 +635,7 @@ class Landing extends React.Component {
                 </Col>
               </Row>
             </Container>
-          </section>
+          </section> */}
           <section
             style={{ backgroundColor: "#FFFEF5" }}
             className="section section-lg "
@@ -636,7 +745,7 @@ class Landing extends React.Component {
                         <Button
                           block
                           className="btn-round"
-                          color="default"
+                          color="danger"
                           size="lg"
                           type="button"
                         >
