@@ -510,13 +510,13 @@ class Landing extends React.Component {
                 </Col>
               </Row>
               <Row className="row-grid align-items-center">
-                <Col lg="6">
+                <Col lg="5" className="order-md-3">
                   <Alert id="library">Online Virtual Library</Alert>
-                  <h4>
+                  <h6>
                   Personalized children’s book recommendations with a focus on books relating to social issues
-                  </h4>
+                  </h6>
                 </Col>
-                <Col lg="2">
+                <Col lg="3" className="order-md-2">
                 </Col>
                 <Col className="order-md-1" md="3">
                   <img
